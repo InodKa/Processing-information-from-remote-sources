@@ -17,3 +17,19 @@
 .nfs*
 
 # End of https://www.toptal.com/developers/gitignore/api/linux
+
+# Разрешаем файлы README и docker-compose
+!README.md
+!docker-compose.yaml
+
+# Разрешаем только файл citibike_data_etl.py в папке dags
+!dags/citibike_data_etl.py
+
+# Разрешаем папку pic и её содержимое
+!pic/
+
+# Игнорируем временные файлы и папки, которые не нужны
+dags/__pycache__/
+dags/data/
+logs/
+.env
